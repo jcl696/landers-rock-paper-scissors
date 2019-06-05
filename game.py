@@ -14,10 +14,19 @@ print("User selection:",user_selection)
 
 # validate inputs
 
+game_options = ["rock", "paper", "scissor"]
+
+
+if user_selection in game_options:
+    print("Valid")
+else:
+    print("Invalid selection, please run again")
+    exit()
 
 
 # generate computer selection
 
+print("Generating...")
 
 #determine the winner
 

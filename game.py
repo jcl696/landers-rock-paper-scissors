@@ -1,5 +1,5 @@
 #game.py
-
+import random 
 print("Rock, Paper, Scissors, Shoot!")
 
 
@@ -27,6 +27,13 @@ if user_selection not in game_options:
 
 print("Generating...")
 
+
+
+computer_selection = random.choice(game_options)
+
+print("-----------------")
+
+print("Computer selection:", computer_selection)
 #determine the winner
 
 

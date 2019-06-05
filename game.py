@@ -17,11 +17,10 @@ print("User selection:",user_selection)
 game_options = ["rock", "paper", "scissor"]
 
 
-if user_selection in game_options:
-    print("Valid")
-else:
+if user_selection not in game_options:
     print("Invalid selection, please run again")
     exit()
+
 
 
 # generate computer selection

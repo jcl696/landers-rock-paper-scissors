@@ -4,6 +4,29 @@ import random
 def my_message():
     return "HELLO"
 
+def determine_winner(u, c):
+    winners = {
+        "rock": {
+            "rock": None,
+            "paper": "paper",
+            "scissors": "rock",
+        },
+        "paper": {
+            "rock": "paper",
+            "paper": None,
+            "scissors": "scissors",
+        },
+        "scissors": {
+            "rock": "rock",
+            "paper": "scissors",
+            "scissors": None,
+        },
+    }
+
+    winning_choice = winners[u][c]
+
+    return winning_choice
+
 # only if this script is executed from the command line should we do all the stuff inside
 if __name__ == "__main__":
 
